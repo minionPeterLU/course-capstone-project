@@ -1,0 +1,29 @@
+Introduction
+	
+Singapore is Asia’s number one foreign exchange trading center as well as a key Asian base for commodities traders and fund managers. It is such a small island, which was located in Southeast Asia and has a population of just 5.4 million people, enjoyed a current account surplus of $51.4 billion in 2018, which was a massive 18.6 percent of gross domestic product (GDP).
+Singapore GDP per capita is 55,600 USD in 2019 and ranked at 8th place in the world. 
+
+In Singapore, there are a lot of websites where travellers can check and retrieve recommendations of places to stay or visit like Ctrip, Airbnb and Booking.com. 
+However, most of these websites provides recommendation simply based on usual tourist attractions or key residential areas that are mostly expensive or already kn
+
+Objective
+
+The intention of this project is to collect data from Singapore open data sources and Foursquare API venue recommendations and provide a data driven recommendation that can supplement the recommendation with statistical data.
+The sample recommender system provides the following use case scenario: A person planning to visit Singapore as a Tourist and looking for a reasonable accommodation. 
+The person wants to receive venue recommendation where he/she can stay or rent an HDB apartment with close proximity to places of interest or search category option. The recommendation should not only present the most viable option, but also present a comparison table of all possible town venues.
+The data used will include: Singapore Median Rental Prices by town. Popular Food venues in the vicinity. Food Venue Category. Outdoors and Recreation Nightlife Nearby Schools.
+	
+		
+DATA
+	
+This demonstration will make use of the following data sources: Singapore Towns and median residential rental prices.
+Data will be retrieved from Singapore open dataset from median rent by town and flat type from https://data.gov.sg website.
+The original data source contains median rental prices of Singapore HDB units from 2005 up to 2nd quarter of 2018. 
+For this demonstration, I will simplify the analysis by using the average rental prices of all available flat type.
+Singapore Towns location data retrieved using Google maps API.
+Data coordinates of Town Venues will be retrieved using google API. 
+MRT stations coordinate as a more important centre of for all towns included in venue recommendations.
+Singapore Top Venue Recommendations from Foursquare API (Foursquare website: www.foursquare.com). 
+To explore neighbourhoods in selected towns in Singapore. The Foursquare explore function will be used to get the most common venue categories in each neighbourhood, and then use this feature to group the neighbourhoods into clusters. 
+The following information are retrieved on the first query: Venue ID. Venue Name. Coordinates: Latitude and Longitude. Category Name
+Another venue query will be performed to retrieve venue ratings for each location.
